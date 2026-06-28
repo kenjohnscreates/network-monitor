@@ -30,7 +30,6 @@ crates/
   enrichment/            # rDNS + GeoIP worker
 docs/
   setup.md               # macOS BPF permissions + run notes
-sniffnet_rebuild_prd.md  # Original PRD
 ```
 
 ## Prerequisites (macOS)
@@ -119,7 +118,7 @@ MaxMind GeoLite2 databases have [license constraints](https://dev.maxmind.com/ge
 
 ## Roadmap
 
-See [`sniffnet_rebuild_prd.md`](sniffnet_rebuild_prd.md). All ten phases are complete:
+v1.0 is complete. All ten original build phases shipped:
 
 - [x] Phase 1 — Tauri + Rust workspace bootstrap
 - [x] Phase 2 — Interface discovery via pcap
