@@ -1,0 +1,12 @@
+[package]
+name = "flow_engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+shared_types = { workspace = true }
+serde = { workspace = true }
+
+[dev-dependencies]
+capture_core = { workspace = true }

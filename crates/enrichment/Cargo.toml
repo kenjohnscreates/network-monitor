@@ -1,0 +1,12 @@
+[package]
+name = "enrichment"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+shared_types = { workspace = true }
+serde = { workspace = true }
+maxminddb = { workspace = true }
+dns-lookup = { workspace = true }
+thiserror = { workspace = true }

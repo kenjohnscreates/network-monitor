@@ -1,0 +1,15 @@
+[package]
+name = "capture_core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+shared_types = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+pcap = "2"
+etherparse = "0.20"
+chrono = { workspace = true }

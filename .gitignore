@@ -1,0 +1,35 @@
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock.bak
+
+# Node / pnpm
+node_modules/
+.pnpm-store/
+dist/
+dist-ssr/
+*.local
+
+# Tauri
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log
+*.tsbuildinfo
+
+# GeoIP databases (download from MaxMind yourself; see README / docs/setup.md)
+*.mmdb
+GeoLite2-*/
+
+# Sensitive export samples (often contain live IPs / hostnames)
+*.capture.csv
+**/exports/
+
+.env
+.env.*
+!.env.example

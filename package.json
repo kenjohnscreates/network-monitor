@@ -1,0 +1,15 @@
+{
+  "name": "network-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal-use desktop network traffic monitor (Tauri + Rust + React)",
+  "scripts": {
+    "dev": "pnpm --filter desktop dev",
+    "tauri:dev": "pnpm --filter desktop tauri dev",
+    "tauri:build": "pnpm --filter desktop tauri build",
+    "build": "pnpm --filter desktop build",
+    "cargo:build": "cargo build --workspace",
+    "cargo:test": "cargo test --workspace"
+  },
+  "packageManager": "pnpm@10.33.2"
+}

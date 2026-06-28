@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+members = [
+    "apps/desktop/src-tauri",
+    "crates/capture_core",
+    "crates/flow_engine",
+    "crates/enrichment",
+    "crates/shared_types",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+rust-version = "1.80"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "2.0"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time"] }
+chrono = { version = "0.4", features = ["serde"] }
+maxminddb = "0.26"
+dns-lookup = "2.0"
+
+shared_types = { path = "crates/shared_types" }
+capture_core = { path = "crates/capture_core" }
+flow_engine = { path = "crates/flow_engine" }
+enrichment = { path = "crates/enrichment" }
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
